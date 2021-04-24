@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
 $layout-width-inner: 1200px;
+
+$font-en: 'Lato', sans-serif;
+$font-jp: 'Noto Sans JP', sans-serif;
 
 //マップ型変数breakpointsを定義
 $breakpoints: (
@@ -24,7 +29,7 @@ $breakpoints: (
 
 body {
   color: #082b48;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: $font-jp;
   font-size: 16px;
   line-height: 1.6;
   background: #fff;
@@ -100,6 +105,7 @@ header {
     .header_nav {
       display: flex;
       margin-left: auto;
+      font-family: $font-en;
       @include mq(sp){
         display: none;
       }
@@ -197,6 +203,7 @@ header {
   font-weight: bold;
   position: relative;
   padding-bottom: 24px;
+  font-family: $font-en;
   @include mq(sp){
     font-size: 24px;
     padding-bottom: 14px;
@@ -307,6 +314,7 @@ header {
         }
       }
       .news__data {
+        font-family: $font-en;
         @include mq(sp){
           font-size: 14px;
         }
@@ -355,6 +363,7 @@ header {
   .more{
     text-align: center;
     a {
+      font-family: $font-en;
       display: inline-block;
       color: #E81919;
       font-weight: bold;
@@ -431,6 +440,7 @@ header {
           color: #FFFFFF;
           font-weight: bold;
           vertical-align: middle;
+          font-family: $font-en;
         }
         td {
           text-align: right;
@@ -756,6 +766,7 @@ text-align: center;
   .footer__center-nav {
     display: flex;
     justify-content: center;
+    font-family: $font-en;
     li {
       &:not(:first-child) {
         margin-left: 40px;
@@ -804,6 +815,7 @@ text-align: center;
   margin-top: 44px;
   text-align: center;
   font-size: 14px;
+  font-family: $font-en;
   @include mq(sp){
     margin-top: 20px;
   }
