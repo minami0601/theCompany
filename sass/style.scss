@@ -134,13 +134,26 @@ header {
 }
 
 // section top
+.top01 {
+  background: url('../img/mainvisual.png');
+  background-size: cover;
+
+}
+.top02 {
+  background: url('../img/hojizora.jpg') no-repeat center center / contain;
+}
+.top03 {
+  background-image: url('../img/cafe373-top.jpg');
+  background-size: cover;
+
+}
 .top {
   height: 600px;
   text-align: center;
-  background-image: url('../img/mainvisual.png');
   background-size: cover;
   position: relative;
   margin-top: 100px;
+
   @include mq(sp){
     margin-top: 60px;
     height: 400px;
@@ -155,6 +168,7 @@ header {
       font-weight: bold;
       @include mq(sp){
         font-size: 32px;
+        padding: 0 33px;
       }
     }
     p {
@@ -163,7 +177,6 @@ header {
       font-weight: bold;
       @include mq(sp){
         font-size: 16px;
-        padding: 20px 0 24px 0;
       }
     }
     a {
@@ -839,4 +852,52 @@ text-align: center;
     }
   
   }
+}
+
+.swiper-button-next {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-next.png) no-repeat center center / contain;
+  right: calc( 50% - #{$layout-width-inner / 2});
+  &::after {
+    display: none;
+  }
+  @include mq(tab){
+    right: 10px;
+  }
+  @include mq(sp){
+    right: 10px;
+  }
+
+}
+.swiper-button-prev {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-prev.png) no-repeat center center / contain;
+  left: calc( 50% - #{$layout-width-inner / 2} );
+  &::after {
+    display: none;
+  }
+  @include mq(tab){
+    left: 10px;
+  }
+  @include mq(sp){
+    left: 10px;
+  }
+
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background-color: #FFFFFF9E;
+}
+.swiper-pagination-bullet-active {
+  background-color: #2F7DC8;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
 }

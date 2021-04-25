@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Company</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -25,17 +26,61 @@
 				</ul>
 			</div>
 		</header>
-		<section class="top">
-			<div class="inner">
-				<h1>一番伝えたいことを書く</h1>
-				<p>リードリードリード</p>
-				<div class="contact-btn">
-					<a href="">お問い合わせ</a>
+		<!-- Slider main container -->
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<section class="top top01">
+						<div class="inner">
+							<h1>一番伝えたいことを書く1</h1>
+							<p>リードリードリード</p>
+							<div class="contact-btn">
+								<a href="">お問い合わせ</a>
+							</div>
+							<!-- contact -->
+						</div>
+						<!-- container -->
+					</section>
 				</div>
-				<!-- contact -->
+				<div class="swiper-slide">
+					<section class="top top02">
+						<div class="inner">
+							<h1>一番伝えたいことを書く2</h1>
+							<p>リードリードリード</p>
+							<div class="contact-btn">
+								<a href="">お問い合わせ</a>
+							</div>
+							<!-- contact -->
+						</div>
+						<!-- container -->
+					</section>
+			
+				</div>
+				<div class="swiper-slide">
+					<section class="top top03">
+						<div class="inner">
+							<h1>一番伝えたいことを書く3</h1>
+							<p>リードリードリード</p>
+							<div class="contact-btn">
+								<a href="">お問い合わせ</a>
+							</div>
+							<!-- contact -->
+						</div>
+						<!-- container -->
+					</section>
+			
+				</div>
 			</div>
-			<!-- container -->
-		</section>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+		</div>
 		<section class="card section">
 			<div class="card__inner inner">
 				<div class="card__head section__title">Card</div>
@@ -300,5 +345,7 @@
 			</div>
 		</footer>
 		<div class="to-top"><a href=""><img src="./img/totop.png" alt=""></a></div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

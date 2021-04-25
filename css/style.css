@@ -141,10 +141,23 @@ header .header__inner .header_nav .nav_item a.active::after {
   background-color: #E81919;
 }
 
+.top01 {
+  background: url("../img/mainvisual.png");
+  background-size: cover;
+}
+
+.top02 {
+  background: url("../img/hojizora.jpg") no-repeat center center/contain;
+}
+
+.top03 {
+  background-image: url("../img/cafe373-top.jpg");
+  background-size: cover;
+}
+
 .top {
   height: 600px;
   text-align: center;
-  background-image: url("../img/mainvisual.png");
   background-size: cover;
   position: relative;
   margin-top: 100px;
@@ -173,6 +186,7 @@ header .header__inner .header_nav .nav_item a.active::after {
 @media (max-width: 767px) {
   .top .inner h1 {
     font-size: 32px;
+    padding: 0 33px;
   }
 }
 
@@ -185,7 +199,6 @@ header .header__inner .header_nav .nav_item a.active::after {
 @media (max-width: 767px) {
   .top .inner p {
     font-size: 16px;
-    padding: 20px 0 24px 0;
   }
 }
 
@@ -1007,4 +1020,67 @@ header .header__inner .header_nav .nav_item a.active::after {
     height: 40px;
     width: 40px;
   }
+}
+
+.swiper-button-next {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-next.png) no-repeat center center/contain;
+  right: calc( 50% - 600px);
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+
+.swiper-button-prev {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  background: transparent url(../img/arrow-prev.png) no-repeat center center/contain;
+  left: calc( 50% - 600px);
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .swiper-button-prev {
+    left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    left: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background-color: #FFFFFF9E;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2F7DC8;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
 }
