@@ -68,7 +68,7 @@ h6 {
   margin: 0;
 }
 
-header {
+.header {
   background-color: #3F51B5;
   height: 100px;
   width: 100%;
@@ -79,12 +79,12 @@ header {
 }
 
 @media (max-width: 767px) {
-  header {
+  .header {
     height: 60px;
   }
 }
 
-header .header__inner {
+.header .header__inner {
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,21 +94,21 @@ header .header__inner {
           align-items: center;
 }
 
-header .header__inner .logo {
+.header .header__inner .logo {
   width: 205px;
 }
 
 @media (max-width: 767px) {
-  header .header__inner .logo {
+  .header .header__inner .logo {
     width: 182px;
   }
 }
 
-header .header__inner .logo img {
+.header .header__inner .logo img {
   display: block;
 }
 
-header .header__inner .header_nav {
+.header .header__inner .header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,21 +117,21 @@ header .header__inner .header_nav {
 }
 
 @media (max-width: 767px) {
-  header .header__inner .header_nav {
+  .header .header__inner .header_nav {
     display: none;
   }
 }
 
-header .header__inner .header_nav .nav_item:not(:first-child) {
+.header .header__inner .header_nav .nav_item:not(:first-child) {
   margin-left: 40px;
 }
 
-header .header__inner .header_nav .nav_item a {
+.header .header__inner .header_nav .nav_item a {
   color: #FFFFFF;
   position: relative;
 }
 
-header .header__inner .header_nav .nav_item a.active::after {
+.header .header__inner .header_nav .nav_item a.active::after {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -1123,6 +1123,10 @@ header .header__inner .header_nav .nav_item a.active::after {
   position: fixed;
   right: 24px;
   bottom: 24px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -1130,6 +1134,11 @@ header .header__inner .header_nav .nav_item a.active::after {
     right: 12px;
     bottom: 12px;
   }
+}
+
+.to-top.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .to-top img {

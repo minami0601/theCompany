@@ -37,3 +37,14 @@ jQuery('a[href^="#"]').on('click', function(){
   },
 500);
 })
+
+$(window).on('scroll', function(){
+  let top = $(this).scrollTop();
+  if (100 < top) {
+    $('.to-top').addClass('is-show')
+  } else {
+    $('.to-top').removeClass('is-show')
+  }
+});
+
+
