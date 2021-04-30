@@ -141,11 +141,12 @@ header {
   top: 20px;
   right: 20px;
   display: none;
+  transition: transform .5s ease 0s;
   @include mq(sp){
     display: block;
   }
   &.open {
-    right: 210px;
+    transform: translateX(-200px);
     .drawer__icon-item1 {
       transform: rotate(45deg);
       top: 8px;
@@ -194,6 +195,8 @@ header {
   height: 100%;
   width: 200px;
   transform: translateX(105%);
+  transition: transform .5s ease 0s;
+
   &.open {
     transform: translateX(0);
   }

@@ -16,3 +16,12 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 new WOW().init();
+
+jQuery('.drawer__icon').on('click', function(e){
+  e.preventDefault();
+
+  jQuery(this).toggleClass('open');
+  jQuery('.drawer__content').toggleClass('open');
+  jQuery('.drawer__bg').toggleClass('open');
+
+})

@@ -147,6 +147,10 @@ header .header__inner .header_nav .nav_item a.active::after {
   top: 20px;
   right: 20px;
   display: none;
+  -webkit-transition: -webkit-transform .5s ease 0s;
+  transition: -webkit-transform .5s ease 0s;
+  transition: transform .5s ease 0s;
+  transition: transform .5s ease 0s, -webkit-transform .5s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -156,7 +160,8 @@ header .header__inner .header_nav .nav_item a.active::after {
 }
 
 .drawer__icon.open {
-  right: 210px;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
 }
 
 .drawer__icon.open .drawer__icon-item1 {
@@ -212,6 +217,10 @@ header .header__inner .header_nav .nav_item a.active::after {
   width: 200px;
   -webkit-transform: translateX(105%);
           transform: translateX(105%);
+  -webkit-transition: -webkit-transform .5s ease 0s;
+  transition: -webkit-transform .5s ease 0s;
+  transition: transform .5s ease 0s;
+  transition: transform .5s ease 0s, -webkit-transform .5s ease 0s;
 }
 
 .drawer__content.open {
