@@ -47,4 +47,10 @@ $(window).on('scroll', function(){
   }
 });
 
+$('.header ul li a').on('click', function(){
+  $('.header ul li a').removeClass( 'active' );
+  $(this).addClass( 'active' );
+  return false;
+});
+
 

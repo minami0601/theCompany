@@ -116,6 +116,17 @@ h6 {
         a {
           color: #FFFFFF;
           position: relative;
+          &:hover {
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -8px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #E81919;
+            }
+          }
           &.active {
             &::after {
               content: "";
