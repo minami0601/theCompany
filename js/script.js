@@ -53,4 +53,7 @@ $('.header ul li a').on('click', function(){
   return false;
 });
 
-
+$('.accordion__head').click(function() {
+  $(this).next().slideToggle();
+  $(this).children('.accordion__icon').toggleClass( 'is-open' );
+});
