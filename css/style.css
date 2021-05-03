@@ -1089,6 +1089,133 @@ h6 {
   border: none;
 }
 
+.modal-contact {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 900px;
+  max-width: calc(100% - 24px * 2);
+  height: 652px;
+  max-height: calc(100% - 24px * 2);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  z-index: 501;
+  background-color: #FFFFFF;
+  padding: 60px;
+  color: #707070;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .modal-contact {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.modal-contact__head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 24px;
+  font-family: "Lato", sans-serif;
+  color: #707070;
+}
+
+@media (max-width: 767px) {
+  .modal-contact__head {
+    font-size: 24px;
+    padding-bottom: 14px;
+  }
+}
+
+.modal-contact__head::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  background-color: #3F51B5;
+  width: 100px;
+}
+
+.modal-contact_content {
+  margin-top: 40px;
+  height: calc(100% - 108px - 100px);
+  overflow: auto;
+}
+
+.modal-contact__sub-head {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.modal-contact__sub-head > :first-child {
+  margin-top: 0;
+}
+
+.modal-contact__sub-head::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background-color: #3F51B5;
+}
+
+.modal-contact__text {
+  margin-top: 16px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+.modal-contact__button {
+  text-align: center;
+}
+
+.modal-contact__button a {
+  display: inline-block;
+  background-color: #3F51B5;
+  width: 176px;
+  height: 48px;
+  color: #FFFFFF;
+  line-height: 48px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+  margin: 60px 0;
+}
+
+.modal-contact__icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: -20px;
+  right: -20px;
+}
+
+.modal-contact__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 500;
+  display: none;
+}
+
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#333333));
   background: linear-gradient(to bottom, #666666, #333333);

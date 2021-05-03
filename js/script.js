@@ -57,3 +57,15 @@ $('.accordion__head').click(function() {
   $(this).next().slideToggle();
   $(this).children('.accordion__icon').toggleClass( 'is-open' );
 });
+
+$('.js-close-button').on('click', function(e){
+  e.preventDefault()
+  let target = $(this).data('target');
+  $(target).hide();
+});
+
+$('.js-open-button').on('click', function(e){
+  e.preventDefault()
+  let target = $(this).data('target');
+  $(target).show();
+});
